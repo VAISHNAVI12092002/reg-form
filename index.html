@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Form</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+#nav{
+    display: flex;
+    align-items: center;
+}
+        body{
+            background-image: url("https://image.shutterstock.com/image-photo/book-campus-university-education-concept-260nw-540145942.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 1000px;
+            
+        }
+        h1{
+            font-family: cursive;
+            font-size:50px;
+            text-align: center;
+            text-decoration: underline;
+            color:rgb(0,0,0);
+        }
+        .name{
+            width: 80%;
+            padding: 5px;
+            outline: 0;
+            border-right: 4px solid lightgray;
+            border-bottom: 4px solid rgb(66, 86, 107);
+            border-bottom-right-radius:5px;
+            border-bottom-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        #add{
+           border-radius: 5px; 
+           border-right:4px solid lightgray;
+           border-bottom:4px solid rgb(66, 86, 107);
+        }
+        #gen{
+            font-size: 16px;
+        }
+        table{
+            color:white ;
+            background-color:rgb(0,0,0,0.5) ;
+            border-collapse: separate;
+            font-size: 22px;
+            font-family: 'Ubuntu', sans-serif; ;
+            padding: 5px;
+            border:5px solid white ;
+            text-align: -webkit-center;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Registration Form</h1>
+    <table align="center" cellpadding="10">
+    <tr>
+        <td>First Name :</td>
+        <td><input type = "text" class="name" placeholder="Enter your First Name"></td>
+    </tr>
+    <tr>
+        <td>Last Name :</td>
+        <td><input type = "text" class="name" placeholder="Enter your Last Name"></td>
+    </tr>
+    <tr>
+        <td>Class :</td>
+        <td><input type = "number" class="name"  placeholder="Enter your present class"></td>
+    </tr>
+    <tr>
+        <td>Section :</td>
+        <td><input type = "text" class="name" placeholder="Enter your Section"></td>
+    </tr>
+    <tr>
+        <td>Roll-No :</td>
+        <td><input type = "number" class="name" placeholder="Enter your Roll-No"></td>
+    </tr>
+    <tr>
+        <td>Date Of Birth :</td>
+        <td><input type = "data" class="name" placeholder="Enter your DOB"></td>
+    </tr>
+    <tr>
+        <td>Email :</td>
+        <td><input type = "email" class="name"  placeholder="Enter your Email"></td>
+    </tr>
+    <tr>
+        <td>Password :</td>
+        <td><input type = "password" class="name" placeholder="Enter your password"></td>
+    </tr>
+    <tr>
+        <td>Re-Enter Password :</td>
+        <td><input type = "password" class="name" placeholder="Re-Enter your password"></td>
+    </tr>
+    <tr>
+        <td>Mobile Number :</td>
+        <td><input type = "number" class="name" placeholder="Enter your Mobile Number"></td>
+    </tr>
+    <tr>
+        <td>Gender :</td>
+        <td id="gen"><input type="radio" name="male">Male<input type="radio" name="male">Female<input type="radio" name="male">Others</td>
+    </tr>
+    <tr>
+        <td>Address :</td>
+        <td><textarea rows="4" cols="25" id="add" placeholder="Enter your Address"></textarea></td>
+    </tr>
+    <tr>
+        <td align="center" colspan="2"  ><input type="submit" value="Reset">&nbsp &nbsp <input type="submit" value="Submit Now"></td>
+    </tr>
+    </table>
+    
+</body>
+</html>
